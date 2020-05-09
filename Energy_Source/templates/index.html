@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID-19 Prediction</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="../static/img/small.jpg" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="../static/css/aos.css">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <style>
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(../static/img/frontpage.png);">
+        <div class="container align-text-top text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <!-- <img src="../static/img/small.jpg" alt="logo"> -->
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5"> COVID-19 Prediction using Machine Learning<br>
+
+                <h1>
+
+
+                    <!-- <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Data Source: Energy Information Administration - EIA - Official Energy Statistics from the U.S. Government
+                <br>
+            </p> -->
+
+        </div>
+    </div>
+    <div class="container my-6 py-3">
+        <!-- <a href="/machinelearning" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Machine Learning</a> -->
+        <a href="/machinelearning" data-aos="fade" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Machine Learning</a>
+        <a href="https://public.tableau.com/profile/aaron.halbert#!/vizhome/Covid-19DataAnalysis_15883663586140/Covid-19DataAnalysis?publish=yes" data-aos="fade" class="btn my-4 font-weight-bold atlas-cta cta-ghost" target=" _blank ">Data Visualization</a>
+        <a href="https://github.com/nirgunjoshi/GT_Project_03.git" data-aos="fade" class="btn my-4 font-weight-bold atlas-cta cta-ghost" target=" _blank ">GitHub</a>
+        <a href="/resources " data-aos="fade " class="btn my-4 font-weight-bold atlas-cta cta-ghost ">References / Data Sources</a>
+        <!-- <a href="/credits " data-aos="fade " class="btn my-4 font-weight-bold atlas-cta cta-ghost ">Credits</a> -->
+        <a href="/bio " data-aos="fade " class="btn my-4 font-weight-bold atlas-cta cta-ghost ">About Us / Team</a>
+    </div>
+    <h3 style="color:Blue " class="text-center font-weight-bold my-6 ">Scope:</h3>
+    <h4 class="text-center ">
+        The goal of this project is to predict the outbreak trend in the world and in the US using Machine Learning
+    </h4>
+    <h4 class="text-center ">
+        We will model the global and US trajectories of the outbreak counts of confirmed cases,deaths and recovered cases from the start date of 22 January 2020 to now and predict 10 days in the future
+    </h4>
+    <br>
+    <!-- three-blcok -->
+    <div class=" container my-5 py-2 ">
+        <h3 style="color:brown " class="text-center font-weight-bold my-6 ">What is it for you ??</h3>
+        <div class="row ">
+            <div data-aos="fade-up " data-aos-delay="0 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-center ">
+                <!-- <img src="../static/img/coal-1.jpg " alt="Anti-spam " class="mx-auto "> -->
+                <h4 style="color:blue ">What is Coronavirus ?</a>
+                </h4>
+                <p> Coronaviruses (CoV) are a large family of viruses transmitting between animals and people that cause illness ranging from the common cold to more severe diseases such as Middle East respiratory syndrome (MERS-CoV) and severe acute respiratory
+                    syndrome (SARS-CoV). </p>
+                <a style="color: blueviolet; " href="https://www.youtube.com/watch?v=sHP0UIdZyI4&feature=youtu.be " target=" _blank "> Explained by Doctor
+                </a>
+            </div>
+            <br>
+            <div data-aos="fade-up " data-aos-delay="200 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-center ">
+                <!-- <img src="../static/img/gas-2.jpg " alt="Phishing Detect " class="mx-auto "> -->
+                <h4 style="color:blue ">How COVID-19 Emerged ?</a>
+                </h4>
+                <p>COVID-19 appeared in Wuhan, a city in China, in December 2019. Although health officials are still tracing the exact source of this new coronavirus, early hypotheses thought it may be linked to a seafood market in Wuhan, China. Some people
+                    who visited the market developed viral pneumonia caused by the new coronavirus. A study that came out on Jan. 25, 2020, notes that the individual with the first reported case became ill on Dec. 1, 2019, and had no link to the seafood
+                    market. Investigations are ongoing as to how this virus originated and spread.
+
+                </p>
+            </div>
+            <div data-aos="fade-up " data-aos-delay="400 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-left ">
+                <!-- <img src="../static/img/petro-3.jpg " alt="Smart Scan " class="mx-auto "> -->
+                <h4 style="color:blue ">Symptoms of COVID-19</a>
+                </h4>
+                <ul>
+                    <li>Fever</li>
+                    <li>Cough</li>
+                    <li>Shortness of breath or difficulty breathing</li>
+                    <li>Tiredness</li>
+                    <li>Sore throat</li>
+                    <li>Loss of smell</li>
+                    <li>Headache</li>
+
+                </ul>
+
+            </div>
+            <br>
+            <br>
+            <div data-aos="fade-up " data-aos-delay="700 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-center ">
+                <!-- <img src="../static/img/nuclear-4.jpg " alt="Smart Scan " class="mx-auto ">
+                <h4><a href="/nuclear ">Nuclear</a></h4> -->
+                <h4 style="color:blue "> Global Impact of Coronavirus</h4>
+                <p> The novel coronavirus is now a public health emergency of international concern,</p>
+                <h5> Coronavirus Cases: 3,563,335 </h5>
+                <h5> Deaths: 248,135 </h5>
+                <a style="color: blueviolet; " href="https://www.worldometers.info/coronavirus/ " target=" _blank "> Live Numbers
+                </a>
+            </div>
+            <div data-aos="fade-up " data-aos-delay="800 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-center ">
+                <!-- <img src="../static/img/renewable-5.jpg " alt="Smart Scan " class="mx-auto ">
+                <h4><a href="/renewable ">Renewable Energy</a></h4> -->
+                <h4 style="color:blue "> Outbreak Analysis:</h4>
+                <h4 style="color:brown "> Machine Learning</h4>
+                <p>We will analyse the outbreak of coronavirus across various regions, visualize them using charts and graphs and predict the number of upcoming cases for the next 10 days using Linear Regression and SVM model in Python Coronavirus outbreak
+                    analysis
+                </p>
+            </div>
+
+            <div data-aos="fade-up " data-aos-delay="1000 " data-aos-duration="1000 " data-aos-once="true " class="col-md-4 text-center ">
+                <h4 style="color:blue "> Safety Precautions</h4>
+                <img height="600 " width="400 " src="../static/img/corona-prevention.jpg " alt="Smart Scan ">
+                <!-- <div id="data "></div> -->
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center font-weight-bold d-block mb-4 ">Tools and Technology:</h3>
+    <h4 class=" text-center "> We have used the following tools and Technologies to execute this project:</h4>
+    <br>
+    <br>
+    <div class="row ">
+        <div class="column ">
+            <img src="../static/img/python_logo.png " width=" 400px " class=" mx-auto " />
+        </div>
+        <div class="column ">
+            <img src=" ../static/img/machine_learning.jpg " width=" 250px " class="mx-auto " />
+        </div>
+        <div class="column ">
+            <img src="../static/img/flask_logo.png " width=" 250px " class="mx-auto " />
+        </div>
+        <div class="column ">
+            <img src="../static/img/HTML_CSS_JS.png " width=" 300px " class="mx-auto " />
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row ">
+        <div class="column ">
+            <img src="../static/img/github.png " width=" 150px " class="mx-auto " />
+        </div>
+        <div class="column ">
+            <img src="../static/img/tableau_logo.png " width=" 225px " class="mx-auto " />
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="column ">
+            <img src="../static/img/heroku_logo.jpg " width=" 250px " class="mx-auto " />
+        </div>
+        <div class="column ">
+            <img src="../static/img/matplotlib.jpg " width=" 300 px " class="mx-auto " />
+        </div>
+    </div>
+    <!-- AOS -->
+    <script src=" ../static/js/aos.js "></script>
+    <script>
+        AOS.init({});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js "></script>
+
+    <!-- <script src="{{ url_for( 'static', filename='js/app.js' ) }} "></script> -->
+
+</body>
+
+</html>
