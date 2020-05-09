@@ -115,10 +115,10 @@ def machinelearning():
         return render_template("machinelearning_light.html")
 
 
-@app.route("/bio")
-def bio():
+# @app.route("/bio")
+# def bio():
 
-    return render_template("bio.html")
+#     return render_template("bio.html")
 
 
 @app.route("/credits")
