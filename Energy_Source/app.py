@@ -121,12 +121,6 @@ def bio():
     return render_template("bio.html")
 
 
-@app.route("/machinelearning")
-def machinelearning():
-
-    return render_template("machinelearning.html")
-
-
 @app.route("/credits")
 def credits():
 
